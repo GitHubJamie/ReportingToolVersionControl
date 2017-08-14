@@ -16,7 +16,7 @@ namespace WebReportingTool
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = TextBox1.Text + " he llo ";
+            TextBox1.Text = TextBox1.Text + "hello ";
         }
     }
 }
