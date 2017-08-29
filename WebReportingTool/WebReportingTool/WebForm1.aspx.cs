@@ -11,12 +11,38 @@ namespace WebReportingTool
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            MultiView1.ActiveViewIndex = 0;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = TextBox1.Text + " hello world 3 ";
+            MultiView1.ActiveViewIndex = 0;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 1;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 2;
+        }
+
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e) // Logo
+        {
+            MultiView1.ActiveViewIndex = 0;
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e) // Log in
+        {
+            MultiView1.ActiveViewIndex = 3;
+        }
+
+        protected void ImageButton3_Click(object sender, ImageClickEventArgs e) // Register
+        {
+            MultiView1.ActiveViewIndex = 4;
         }
     }
 }
